@@ -10,9 +10,8 @@ workflows:
           name: component_tests
           start: npm start
           wait-on: http://localhost:3000
-          command: npx cypress run-ct --parallel 2
-          parallelism: 2
-          # parallel: true
+          command: npx cypress run-ct
+          parallelism: 2 # wont actually split across containers yet
           executor: cypress/base-14
           no-workspace: true
           record: true
@@ -20,8 +19,7 @@ workflows:
           name: e2e_tests
           start: npm start
           wait-on: http://localhost:3000
-          parallelism: 2
+          parallelism: 2 # wont actually split across containers yet 
           executor: cypress/base-14
           no-workspace: true
-          # parallel: true
           record: true
