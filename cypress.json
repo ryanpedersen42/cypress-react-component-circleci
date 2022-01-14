@@ -1,5 +1,6 @@
 {
   "testFiles": "**/*.spec.js",
+  "projectId": "f84udi",
   "component": {
     "componentFolder": "src",
     "testFiles": "**/*spec.{js,jsx,ts,tsx}"
