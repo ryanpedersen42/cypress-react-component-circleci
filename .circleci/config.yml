@@ -11,4 +11,4 @@ workflows:
           start: npm start
           wait-on: http://localhost:3000
           command: npx cypress run-ct
-          executor: cypress/base-14
+          executor: cimg/node:16.13.1
