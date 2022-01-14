@@ -4,7 +4,7 @@ orbs:
   cypress: cypress-io/cypress@1.29.0
 
 workflows:
-  run_component_tests:
+  run_cypress_tests:
     jobs:
       - cypress/run:
           name: component_tests
