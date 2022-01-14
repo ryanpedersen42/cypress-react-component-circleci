@@ -12,10 +12,10 @@ workflows:
           wait-on: http://localhost:3000
           command: npx cypress run-ct
           parallelism: 2
-          parallel: true
+          # parallel: true
           executor: cypress/base-14
           no-workspace: true
-          record: true
+          # record: true
       - cypress/run:
           name: e2e_tests
           start: npm start
@@ -23,5 +23,5 @@ workflows:
           parallelism: 2
           executor: cypress/base-14
           no-workspace: true
-          parallel: true
-          record: true
+          # parallel: true
+          # record: true
