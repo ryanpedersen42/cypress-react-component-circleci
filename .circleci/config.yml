@@ -1,0 +1,12 @@
+version: 2.1
+
+orbs:
+  cypress: cypress-io/cypress@1.29.0
+
+workflows:
+  run_component_tests:
+    - cypress/run:
+        name: Component tests
+        start: npm start
+        wait-on: http://localhost:3000
+        command: npx cypress run-ct
