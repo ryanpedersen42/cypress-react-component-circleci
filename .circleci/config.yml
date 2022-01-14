@@ -15,7 +15,7 @@ workflows:
           # parallel: true
           executor: cypress/base-14
           no-workspace: true
-          # record: true
+          record: true
       - cypress/run:
           name: e2e_tests
           start: npm start
@@ -24,4 +24,4 @@ workflows:
           executor: cypress/base-14
           no-workspace: true
           # parallel: true
-          # record: true
+          record: true
