@@ -1,5 +1,7 @@
 # Cypress Component Tests on CircleCI
 
+### About
+
 This project runs integration and component tests in CircleCI.
 
 * Component test plug-in lives in `cypress/plugins/index.js`
@@ -7,7 +9,7 @@ This project runs integration and component tests in CircleCI.
 * Integration tests live in `cypress/integration/*`
 * Component tests are `App.spec.js` and `components/Button.spec.js`
 
-Commands
+### Commands
 ```
 # Run locally
 npx cypress open-ct
