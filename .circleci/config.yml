@@ -11,6 +11,7 @@ workflows:
           start: npm start
           wait-on: http://localhost:3000
           command: npx cypress run-ct
+          parallelism: 2
           executor: cypress/base-14
           no-workspace: true
       - cypress/run:
