@@ -5,8 +5,9 @@ orbs:
 
 workflows:
   run_component_tests:
-    - cypress/run:
-        name: Component tests
-        start: npm start
-        wait-on: http://localhost:3000
-        command: npx cypress run-ct
+    jobs:
+      - cypress/run:
+          name: Component tests
+          start: npm start
+          wait-on: http://localhost:3000
+          command: npx cypress run-ct
