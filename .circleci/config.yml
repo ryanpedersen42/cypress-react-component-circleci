@@ -13,3 +13,10 @@ workflows:
           command: npx cypress run-ct
           executor: cypress/base-14
           no-workspace: true
+      - cypress/run:
+          name: e2e_tests
+          start: npm start
+          wait-on: http://localhost:3000
+          # command: npx cypress run-ct
+          executor: cypress/base-14
+          no-workspace: true
