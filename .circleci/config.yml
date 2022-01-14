@@ -23,5 +23,5 @@ workflows:
           parallelism: 2
           executor: cypress/base-14
           no-workspace: true
-          # parallel: true
+          parallel: true
           record: true
