@@ -18,5 +18,6 @@ workflows:
           name: e2e_tests
           start: npm start
           wait-on: http://localhost:3000
+          parallelism: 2
           executor: cypress/base-14
           no-workspace: true
