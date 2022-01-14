@@ -7,8 +7,9 @@ workflows:
   run_component_tests:
     jobs:
       - cypress/run:
-          name: component tests
+          name: component_tests
           start: npm start
           wait-on: http://localhost:3000
           command: npx cypress run-ct
-          executor: cimg/node:16.13.1
+          executor: cypress/base-14
+          no-workspace: true
